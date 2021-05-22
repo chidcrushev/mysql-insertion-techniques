@@ -1,4 +1,4 @@
-# mysql-insertion-techniques
+# MySQL Insertion Techniques
 
 ## How to run the Project?
 1. Go inside the Project folder

@@ -2,7 +2,11 @@
 
 ## How to run the Project?
 1. Go inside the Project folder
-2. Run the command *npm ci* from the terminal.
+2. Run the following command from the terminal.
+```
+npm ci
+npm start
+```
 
 ## Project Description
 This project consists of a simple UI which interacts with mysql database by using Node Js in order to compare the insertion times of single insertion vs bulk loading in mysql.
@@ -10,11 +14,11 @@ This project consists of a simple UI which interacts with mysql database by usin
 2. Bulk Loading - [https://dev.mysql.com/doc/refman/8.0/en/load-data.html](https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
 
 ## Stack Used
-1. html5
-2. css3
+1. Html5
+2. Css3
 3. Node Js
 4. HandleBars
-5. multer
+5. Multer
 6. Node js
 7. MySQL
 

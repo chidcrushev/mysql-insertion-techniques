@@ -1,0 +1,116 @@
+<body>
+    <div class="body-container">
+        <div class="body-content">
+            <header class="header">
+
+            </header>
+
+            <div class="main-content">
+                </br></br>
+                <section class="post">
+                    <div class="loginForm-parent">
+                        <div class="form-container">
+
+                            <h3>DBMS</h3>
+
+                            <div class="success-error-message" id="success-error-message">
+                                {{#if result}}
+                                <div class="message-content" id="message-content">{{result}}</div>
+                                {{/if}}
+                            </div>
+
+                            <div class="form-fields">
+                                <form action="/" method="post" class="form-input" enctype="multipart/form-data">
+
+                                    <div class="form-element">
+                                        <label>Select operation
+                                            <select id="operation" name="operation" required>
+                                                <option value="single_insert">Single Insert</option>
+                                                <option value="bulk_loading">Bulk Loading</option>
+                                                <option value="delete">Delete Data</option>
+                                                <option value="query">Enter Query</option>
+
+                                            </select>
+                                        </label>
+                                    </div>
+                                    </br>
+                                    <div class="form-element" id="fileupload-div">
+                                        <input type="file" name="fileupload" accept=".txt" size="15" value="fileupload"
+                                            id="fileupload">
+                                    </div>
+
+                                    <div class="form-element" id="textarea-div">
+
+                                        <textarea id="textarea_query" name="textarea_query" rows="4" cols="40">
+
+                                      </textarea>
+
+                                    </div>
+
+                                    <div class="form-element">
+                                        <button type="submit" value="Submit" class="signin-button">Submit</button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                            </br>
+                        </div>
+                </section>
+
+                </br>
+                </br>
+
+            </div>
+        </div>
+
+        {{#if playersData}}
+
+        <div class="output-container">
+            <h3>Query Result</h3>
+
+            </br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>
+                                <center>Name </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>PlayerID </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>TeamName </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>Position </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>Salary </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>TouchDown </center>
+                            </strong></th>
+                        <th><strong>
+                                <center>TotalYards </center>
+                            </strong></th>
+                    </tr>
+                </thead>
+                {{#each playersData}}
+                <tbody>
+                    <tr>
+                        <td>{{Name}}</td>
+                        <td>{{PlayerID}}</td>
+                        <td>{{TeamName}}</td>
+                        <td>{{Position}}</td>
+                        <td>{{Salary}}</td>
+                        <td>{{Touchdown}}</td>
+                        <td>{{TotalYards}}</td>
+                    </tr>
+                </tbody>
+                {{/each}}
+            </table>
+            {{/if}}
+
+</body>

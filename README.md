@@ -22,3 +22,7 @@ This project consists of a simple UI which interacts with mysql database by usin
 The sample Data for insertion of 150K, 200K records into MySQL is created by using a simple python script.
 
 ## Sample Run
+### Single Insertion(100k records) - Time taken - 4 minutes
+![Single Insertion](output-gif/1single-insertion.gif)
+### Bulk Loading(100k records) - Time taken - 2.5 seconds
+![Bulk Loading](output-gif/3bulk-loading.gif)
